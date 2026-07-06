@@ -1,0 +1,50 @@
+# Grid Box Parameters — BRCA2 DBD P1 Pocket
+# Project: In Silico Screening of Cyanobacterial Compounds Against BRCA2
+# Tool: AutoDock Vina (via Tamarind Bio)
+# Applies to: Track 1 (1MJE_clean.pdb) and Track 2 (BRCA2_noH.pdb)
+# Note: Same coordinates used for both receptors — shared coordinate frame
+#       confirmed by PyMOL alignment (RMSD = 0.324 Å, 3913 atoms).
+
+# --- Grid Box Center ---
+center_x = 27.93
+center_y = 155.71
+center_z = 62.56
+
+# --- Grid Box Size (Angstroms) ---
+size_x = 25
+size_y = 25
+size_z = 25
+
+# --- Spacing ---
+spacing = 1.0
+
+# --- Docking Parameters ---
+exhaustiveness = 8
+num_modes = 9
+
+# --- Pocket Source ---
+# Pocket: PrankWeb P1 (prankweb.cz), Default prediction model
+# Input structure: 1MJE_clean.pdb, chain A only
+# Score: 16.87
+# Probability: 0.790
+# Number of pocket residues: 23
+# Confirmed as DSS1 binding site:
+#   Distance from P1 center to DSS1 geometric center: 7.96 A  (P1, correct)
+#   Distance from P2 center to DSS1 geometric center: 46.19 A (P2, rejected)
+
+# --- P1 Pocket Residues (23 total) ---
+# A2435, A2444, A2547, A2550, A2551, A2554, A2557, A2558,
+# A2576, A2579, A2580, A2583, A2610, A2643, A2644, A2645,
+# A2646, A2668, A2669, A2671, A2709, A2712, A2713
+
+# --- Receptor Files ---
+# Track 1 (mouse): 1MJE_clean.pdb  — chain A, 600 residues, no H atoms
+# Track 2 (human): BRCA2_noH.pdb  — chain B, 714 residues, no H atoms
+#                  (hydrogen atoms removed before upload; see Step 3 of handbook)
+
+# --- Validation ---
+# Redocking: not performed (co-crystallized partner DSS1 is a peptide, not a small molecule)
+# Negative control: caffeine (CID 2519)
+#   Track 1: -5.444 kcal/mol | Track 2: -5.315 kcal/mol
+# Cross-receptor rank consistency: identical ordering across both tracks (delta 0.02-0.67 kcal/mol)
+# Structural alignment RMSD: 0.324 A (human SWISS-MODEL onto mouse 1MJE, 3913 atoms)
