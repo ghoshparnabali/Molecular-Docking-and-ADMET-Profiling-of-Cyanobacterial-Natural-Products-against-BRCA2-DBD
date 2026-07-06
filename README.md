@@ -1,0 +1,2 @@
+# Molecular-Docking-and-ADMET-Profiling-of-Cyanobacterial-Natural-Products-against-BRCA2-DBD
+This repository contains an end-to-end, fully GUI/web-based dual-receptor molecular docking and ADMET profiling pipeline of four cyanobacterial natural products  — scytonemin, phycocyanobilin, lyngbyabellin A and nostocarboline — against the BRCA2 DNA-binding domain using PyMOL, AutoDock Vina, PLIP, SwissADME, and ADMETlab 3.0.
