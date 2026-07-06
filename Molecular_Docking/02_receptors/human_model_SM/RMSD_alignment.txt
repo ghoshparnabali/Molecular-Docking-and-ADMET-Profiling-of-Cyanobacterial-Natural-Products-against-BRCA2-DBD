@@ -1,0 +1,28 @@
+# Structural Alignment: Human BRCA2 (SWISS-MODEL) vs Mouse BRCA2 (1MJE)
+# Tool: PyMOL align command
+# Command: align human_model, mouse_model
+
+Structures aligned:
+  human_model : BRCA2_SM.pdb  (SWISS-MODEL; UniProt P51587; residues 2478-3191; 714 residues)
+  mouse_model : 1MJE_clean.pdb (PDB 1MJE chain A; 600 residues)
+
+Alignment result:
+  Atoms considered : 4478
+  Atoms used (final): 3913
+  RMSD             : 0.324 Å
+
+Rejection cycles (iterative outlier removal):
+  Cycle 1 — 85 atoms rejected  (RMSD = 1.57 Å)
+  Cycle 2 — 191 atoms rejected (RMSD = 0.56 Å)
+  Cycle 3 — 169 atoms rejected (RMSD = 0.38 Å)
+  Cycle 4 — 84 atoms rejected  (RMSD = 0.34 Å)
+  Cycle 5 — 36 atoms rejected  (RMSD = 0.33 Å)
+  Final    — 0 atoms rejected   (RMSD = 0.324 Å)
+
+Interpretation:
+  The low final RMSD (0.324 Å over 3913 atoms) confirms that both structures
+  share the same coordinate frame after alignment. The same grid box coordinates
+  (center X=27.93, Y=155.71, Z=62.56; size 25x25x25 A) were applied to both
+  receptors in all docking runs. The rejected atoms (565/4478, ~12.6%) represent
+  loop regions and termini that diverge between mouse and human sequences,
+  consistent with the 76.4% sequence identity of the template.
